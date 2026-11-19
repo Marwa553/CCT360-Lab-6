@@ -1,0 +1,340 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MUSE | Fashion & Lifestyle</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+  <nav class="navbar md:navbar-expand bg-1">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">MUSE</a>
+
+      <button class="btn-icon navbar-toggler" type="button"
+        data-bs-toggle="drawer" data-bs-target="#siteMenu"
+        aria-controls="siteMenu" aria-expanded="false"
+        aria-label="Open menu">
+        <span class="navbar-toggler-icon" aria-hidden="true"></span>
+      </button>
+
+      <dialog class="drawer drawer-end" id="siteMenu"
+        aria-labelledby="siteMenuLabel">
+        <div class="drawer-header">
+          <h2 class="drawer-title h5" id="siteMenuLabel">MUSE Menu</h2>
+          <button class="btn-close" type="button"
+            data-bs-dismiss="drawer" aria-label="Close menu"></button>
+        </div>
+        <div class="drawer-body">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page"
+                href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#explore">Explore</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </dialog>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <section class="container py-5 text-center">
+    <h1>MUSE</h1>
+    <p class="lead">A little inspiration for the everyday.</p>
+    <p>Explore fashion, beauty, travel and thoughtful living.</p>
+  </section>
+
+  <!-- CAROUSEL -->
+  <section class="container py-4" aria-label="Featured stories">
+    <h2>Featured Stories</h2>
+
+    <div id="museCarousel" class="carousel slide">
+      <div class="carousel-inner">
+
+        <div class="carousel-item active">
+          <img src="images/MUSE-images/fashion.svg"
+            class="d-block w-100"
+            alt="Fashion illustration with modern wardrobe inspiration">
+        </div>
+
+        <div class="carousel-item">
+          <img src="images/MUSE-images/beauty.svg"
+            class="d-block w-100"
+            alt="Beauty illustration with skincare inspiration">
+        </div>
+
+        <div class="carousel-item">
+          <img src="images/MUSE-images/travel.svg"
+            class="d-block w-100"
+            alt="Travel illustration featuring a scenic destination">
+        </div>
+
+      </div>
+
+      <button class="carousel-control-prev" type="button"
+        data-bs-target="#museCarousel" data-bs-slide="prev"
+        aria-label="Previous slide">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      </button>
+
+      <button class="carousel-control-next" type="button"
+        data-bs-target="#museCarousel" data-bs-slide="next"
+        aria-label="Next slide">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      </button>
+    </div>
+  </section>
+
+  <!-- SIX CARDS -->
+  <section class="container py-5" id="explore">
+    <h2>More to Explore</h2>
+    <p>Discover six edits for a more inspired everyday life.</p>
+
+    <div class="row g-4">
+
+      <!-- CARD 1 -->
+      <div class="col-12 md:col-6 lg:col-4">
+        <article class="card h-100">
+          <img src="images/MUSE-images/fashion.svg"
+            class="card-img-top"
+            alt="Illustration of fashion and wardrobe essentials">
+          <div class="card-body">
+            <h3 class="card-title h5">The Everyday Wardrobe</h3>
+            <p>Find timeless pieces that make getting dressed easier.</p>
+            <details>
+              <summary>Details</summary>
+              <p>Pair relaxed trousers with a simple cotton shirt.</p>
+            </details>
+            <button class="btn-solid theme-primary" type="button"
+              data-bs-toggle="dialog" data-bs-target="#dialog1">
+              Read More
+            </button>
+          </div>
+        </article>
+      </div>
+
+      <!-- CARD 2 -->
+      <div class="col-12 md:col-6 lg:col-4">
+        <article class="card h-100">
+          <img src="images/MUSE-images/beauty.svg"
+            class="card-img-top"
+            alt="Illustration of beauty and skincare products">
+          <div class="card-body">
+            <h3 class="card-title h5">The Simple Routine</h3>
+            <p>Discover beauty rituals that fit your everyday life.</p>
+            <details>
+              <summary>Details</summary>
+              <p>Start with cleansing, moisturizer and sunscreen.</p>
+            </details>
+            <button class="btn-solid theme-primary" type="button"
+              data-bs-toggle="dialog" data-bs-target="#dialog2">
+              Read More
+            </button>
+          </div>
+        </article>
+      </div>
+
+      <!-- CARD 3 -->
+      <div class="col-12 md:col-6 lg:col-4">
+        <article class="card h-100">
+          <img src="images/MUSE-images/accessories.svg"
+            class="card-img-top"
+            alt="Illustration of stylish fashion accessories">
+          <div class="card-body">
+            <h3 class="card-title h5">Little Details</h3>
+            <p>Explore accessories that express your personal style.</p>
+            <details>
+              <summary>Details</summary>
+              <p>A scarf or classic handbag can refresh an outfit.</p>
+            </details>
+            <button class="btn-solid theme-primary" type="button"
+              data-bs-toggle="dialog" data-bs-target="#dialog3">
+              Read More
+            </button>
+          </div>
+        </article>
+      </div>
+
+      <!-- CARD 4 -->
+      <div class="col-12 md:col-6 lg:col-4">
+        <article class="card h-100">
+          <img src="images/MUSE-images/travel.svg"
+            class="card-img-top"
+            alt="Illustration representing travel destinations">
+          <div class="card-body">
+            <h3 class="card-title h5">A Weekend Away</h3>
+            <p>Find inspiration for your next short getaway.</p>
+            <details>
+              <summary>Details</summary>
+              <p>Explore local cafes and scenic neighbourhoods.</p>
+            </details>
+            <button class="btn-solid theme-primary" type="button"
+              data-bs-toggle="dialog" data-bs-target="#dialog4">
+              Read More
+            </button>
+          </div>
+        </article>
+      </div>
+
+      <!-- CARD 5 -->
+      <div class="col-12 md:col-6 lg:col-4">
+        <article class="card h-100">
+          <img src="images/MUSE-images/interiors.svg"
+            class="card-img-top"
+            alt="Illustration of a cozy interior space">
+          <div class="card-body">
+            <h3 class="card-title h5">A Softer Space</h3>
+            <p>Create a warm and welcoming home environment.</p>
+            <details>
+              <summary>Details</summary>
+              <p>Try natural textures, candles and soft lighting.</p>
+            </details>
+            <button class="btn-solid theme-primary" type="button"
+              data-bs-toggle="dialog" data-bs-target="#dialog5">
+              Read More
+            </button>
+          </div>
+        </article>
+      </div>
+
+      <!-- CARD 6 -->
+      <div class="col-12 md:col-6 lg:col-4">
+        <article class="card h-100">
+          <img src="images/MUSE-images/lifestyle.svg"
+            class="card-img-top"
+            alt="Illustration representing a relaxing daily routine">
+          <div class="card-body">
+            <h3 class="card-title h5">The Slow Edit</h3>
+            <p>Make room for calm moments in your busy schedule.</p>
+            <details>
+              <summary>Details</summary>
+              <p>Enjoy a quiet morning with tea and a journal.</p>
+            </details>
+            <button class="btn-solid theme-primary" type="button"
+              data-bs-toggle="dialog" data-bs-target="#dialog6">
+              Read More
+            </button>
+          </div>
+        </article>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- DIALOG 1 -->
+  <dialog class="dialog" id="dialog1" aria-labelledby="title1">
+    <div class="dialog-header">
+      <h3 class="dialog-title h5" id="title1">The Everyday Wardrobe</h3>
+      <button class="btn-close" type="button"
+        data-bs-dismiss="dialog" aria-label="Close"></button>
+    </div>
+    <div class="dialog-body">
+      <p>A few versatile pieces can create many stylish outfits.</p>
+    </div>
+    <div class="dialog-footer">
+      <button class="btn-solid theme-primary" type="button"
+        data-bs-dismiss="dialog">Close</button>
+    </div>
+  </dialog>
+
+  <!-- DIALOG 2 -->
+  <dialog class="dialog" id="dialog2" aria-labelledby="title2">
+    <div class="dialog-header">
+      <h3 class="dialog-title h5" id="title2">The Simple Routine</h3>
+      <button class="btn-close" type="button"
+        data-bs-dismiss="dialog" aria-label="Close"></button>
+    </div>
+    <div class="dialog-body">
+      <p>A simple routine can make everyday self-care easier.</p>
+    </div>
+    <div class="dialog-footer">
+      <button class="btn-solid theme-primary" type="button"
+        data-bs-dismiss="dialog">Close</button>
+    </div>
+  </dialog>
+
+  <!-- DIALOG 3 -->
+  <dialog class="dialog" id="dialog3" aria-labelledby="title3">
+    <div class="dialog-header">
+      <h3 class="dialog-title h5" id="title3">Little Details</h3>
+      <button class="btn-close" type="button"
+        data-bs-dismiss="dialog" aria-label="Close"></button>
+    </div>
+    <div class="dialog-body">
+      <p>Accessories are an easy way to make your look unique.</p>
+    </div>
+    <div class="dialog-footer">
+      <button class="btn-solid theme-primary" type="button"
+        data-bs-dismiss="dialog">Close</button>
+    </div>
+  </dialog>
+
+  <!-- DIALOG 4 -->
+  <dialog class="dialog" id="dialog4" aria-labelledby="title4">
+    <div class="dialog-header">
+      <h3 class="dialog-title h5" id="title4">A Weekend Away</h3>
+      <button class="btn-close" type="button"
+        data-bs-dismiss="dialog" aria-label="Close"></button>
+    </div>
+    <div class="dialog-body">
+      <p>A short trip can offer new experiences and inspiration.</p>
+    </div>
+    <div class="dialog-footer">
+      <button class="btn-solid theme-primary" type="button"
+        data-bs-dismiss="dialog">Close</button>
+    </div>
+  </dialog>
+
+  <!-- DIALOG 5 -->
+  <dialog class="dialog" id="dialog5" aria-labelledby="title5">
+    <div class="dialog-header">
+      <h3 class="dialog-title h5" id="title5">A Softer Space</h3>
+      <button class="btn-close" type="button"
+        data-bs-dismiss="dialog" aria-label="Close"></button>
+    </div>
+    <div class="dialog-body">
+      <p>Small decorating changes can make your space feel special.</p>
+    </div>
+    <div class="dialog-footer">
+      <button class="btn-solid theme-primary" type="button"
+        data-bs-dismiss="dialog">Close</button>
+    </div>
+  </dialog>
+
+  <!-- DIALOG 6 -->
+  <dialog class="dialog" id="dialog6" aria-labelledby="title6">
+    <div class="dialog-header">
+      <h3 class="dialog-title h5" id="title6">The Slow Edit</h3>
+      <button class="btn-close" type="button"
+        data-bs-dismiss="dialog" aria-label="Close"></button>
+    </div>
+    <div class="dialog-body">
+      <p>Small daily moments of rest can help you recharge.</p>
+    </div>
+    <div class="dialog-footer">
+      <button class="btn-solid theme-primary" type="button"
+        data-bs-dismiss="dialog">Close</button>
+    </div>
+  </dialog>
+</main>
+
+<footer class="bg-1 py-4 mt-5">
+  <div class="container">
+    <p>© 2026 MUSE | Fashion, Beauty & Lifestyle</p>
+  </div>
+</footer>
+
+<script type="module" src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
